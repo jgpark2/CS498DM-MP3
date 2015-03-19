@@ -1,5 +1,6 @@
 svn ci -m ""
 svn up
 #Compute Unique ID
-uuid=a49cccd6-500b-47fc-bd11-27da82ccd2bb
-#TODO:
+uuid=$(svn info | grep UUID | cut -f3 -d" ")
+revision=$(svn info | grep Revision | cut -f2 -d" ")
+wget ... http://cs498dm-24a.cs.illinois.edu:8080/subversion/${UUID}/notifyCommit?rev=${REV}
