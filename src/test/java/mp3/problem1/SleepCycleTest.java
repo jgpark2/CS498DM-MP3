@@ -19,7 +19,7 @@ public class SleepCycleTest {
 
     public void assertState(SleepCycle.State e_s, SleepCycle.State s) {
 	assertEquals(e_s,s);
-		System.out.println("AAAAAAAAAAAA");
+	//		System.out.println("AAAAAAAAAAAA");
     }
     
     public void assertPostState(SleepCycle sc1, String input1, SleepCycle sc2, String input2) {
