@@ -16,6 +16,7 @@ public class SleepCycleTest {
      * E.g: From Awak state, input "ebm" would get me to deep sleep since, e takes preference over m, and b has no effect at init state if e is present. So "ebm" = "e"
      * A single inputs' chars are commutative... "bem" = "ebm" etc.
      */
+
     public void assertState(SleepCycle.State e_s, SleepCycle.State s) {
 	assertEquals(e_s,s);
     }
